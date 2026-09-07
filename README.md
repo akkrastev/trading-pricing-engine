@@ -46,23 +46,6 @@ http://localhost:5077/scalar
 
 Pending EF Core migrations are applied automatically on startup. The SQLite database is created automatically if it does not exist, and no separate SQLite installation is required.
 
-## Configuration
-
-Auto-trading settings are configured in `Trading.Api/appsettings.json`.
-
-Example:
-
-```json
-"AutoTrading": {
-  "SpreadPercentThreshold": 0.02,
-  "Quantity": 100
-}
-```
-
-Pricing-engine settings such as configured symbols and tick interval use `PricingOptions` defaults and can be overridden through application configuration.
-
-Trading rules are runtime state rather than static application settings. They are read through `GET /api/trading-rules`, updated through `PUT /api/trading-rules`, and persisted as versioned rows so the latest rules can be restored on startup.
-
 ## Solution Structure
 
 ```text
