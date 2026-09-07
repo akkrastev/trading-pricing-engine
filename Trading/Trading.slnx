@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+    <File Path="Directory.Build.props.xml" />
+  </Folder>
+  <Project Path="Trading.Api/Trading.Api.csproj" />
+  <Project Path="Trading.Infrastructure/Trading.Infrastructure.csproj" />
+  <Project Path="Trading.PricingEngine/Trading.PricingEngine.csproj" />
+  <Project Path="Trading.TradingEngine/Trading.TradingEngine.csproj" />
+</Solution>
